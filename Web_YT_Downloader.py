@@ -1,8 +1,6 @@
 import streamlit as st
 from pytube import YouTube
 
-
-
 def download(url):
     youtubeObject = YouTube(url)
     youtubeObject = youtubeObject.streams.get_highest_resolution()
